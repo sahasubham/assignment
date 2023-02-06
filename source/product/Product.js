@@ -223,6 +223,7 @@ const ProductScreen = ({ route, navigation }) => {
               <TextInput
                 placeholder="Original Price"
                 style={Style.inputField}
+                keyboardType="numeric"
                 onChangeText={(e) => setProductPrice(e)}
               />
             </View>
@@ -244,6 +245,7 @@ const ProductScreen = ({ route, navigation }) => {
               <TextInput
                 placeholder="Discount Price"
                 style={Style.inputField}
+                keyboardType="numeric"
                 onChangeText={(e) => setProductDiscountPrice(e)}
               />
             </View>
