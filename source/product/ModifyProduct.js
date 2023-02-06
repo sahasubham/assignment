@@ -240,6 +240,7 @@ const ModifyProduct = ({ route, navigation }) => {
               <TextInput
                 placeholder="Original Price"
                 style={Style.inputField}
+                keyboardType="numeric"
                 defaultValue={product.productData.price}
                 onChangeText={(e) => setProductPrice(e)}
               />
@@ -262,6 +263,7 @@ const ModifyProduct = ({ route, navigation }) => {
               <TextInput
                 placeholder="Discount Price"
                 style={Style.inputField}
+                keyboardType="numeric"
                 defaultValue={product.productData.discount}
                 onChangeText={(e) => setProductDiscountPrice(e)}
               />
