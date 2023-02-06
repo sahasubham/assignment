@@ -279,20 +279,12 @@ const ProductScreen = ({ route, navigation }) => {
             </View>
             {/* upload btn */}
             <View style={[Style.uploadBtn_box, { marginTop: "5%" }]}>
-             {progress == 100 ? (
-                <TouchableOpacity
-                  style={Style.uploadBtn}
-                  onPress={() => addProduct()}
-                >
-                  <Text style={Style.uploadBtn_text}>Add Product</Text>
-                </TouchableOpacity>
-              ) : progress == 0 ? (
-                <></>
-              ) : (
-                <Text style={[Style.inputLabel, Style.text_shadow]}>
-                  {progress}
-                </Text>
-              )}
+              <TouchableOpacity
+                style={Style.uploadBtn}
+                onPress={() => addProduct()}
+              >
+                <Text style={Style.uploadBtn_text}>Add Product</Text>
+              </TouchableOpacity>
             </View>
           </View>
         </View>
